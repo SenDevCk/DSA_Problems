@@ -30,10 +30,10 @@ public class App {
 //        Vector<Integer> result= problem5.targetSumEnhanced(arr, 11);
 //        System.out.println("Required Result");
 //        System.out.print(result.toString());
-        int[] arr= {1,2,1,4,2,2};
+        int[] arr= {1,2,1,2,4,2,2,3,2,2,2};
         Problem6 problem6=new Problem6();
-        int result = problem6.brutForceApproch(arr,arr.length);
-        System.out.println("Result Mejority Element= "+result);
+        Vector<Integer> result = problem6.brutForceApproch(arr,arr.length);
+        System.out.println("Result Mejority Element= "+result.toString());
     }
     
 }
