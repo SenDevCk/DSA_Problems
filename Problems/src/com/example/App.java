@@ -1,10 +1,11 @@
 package com.example;
 
+import java.util.ArrayList;
 import java.util.Vector;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello from module Problems!");
+        System.err.println("Hello from module Problems!");
         //new Problem1().swap(5, 6);
         //lProblem2 problem2=new Problem2();
 //        long value=problem2.convertToBinary(45);
@@ -30,10 +31,18 @@ public class App {
 //        Vector<Integer> result= problem5.targetSumEnhanced(arr, 11);
 //        System.out.println("Required Result");
 //        System.out.print(result.toString());
-        int[] arr= {1,2,1,2,4,2,2,3,2,2,2};
-        Problem6 problem6=new Problem6();
-        Vector<Integer> result = problem6.brutForceApproch(arr,arr.length);
-        System.out.println("Result Mejority Element= "+result.toString());
+        //int[] arr= {1,2,1,2,4,2,2,3,2,2,2};
+       // Problem6 problem6=new Problem6();
+       // Vector<Integer> result = problem6.brutForceApproch(arr,arr.length);
+        //System.out.println("Result Mejority Element= "+result.toString());
+        
+       //int ans= new Problem7().power(5, 4);
+       
+       //System.out.println(ans);
+        int[] arr= {1,8,6,2,5,4,8,3,7};
+        int maxWater= new Problem8().maxWaterInContainerOptimal(arr, arr.length);
+        System.out.println("\n Max Water= "+maxWater);
+        
     }
     
 }

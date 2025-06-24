@@ -24,7 +24,7 @@ public class Problem2 {
 
 	// binary converter
 	public long convertToBinary2(int number) {
-		LocalDateTime time3 = LocalDateTime.now();
+		//LocalDateTime time3 = LocalDateTime.now();
 		long binaryNumber = 0;
 		int remainder = 0;
 		int i = 0;
@@ -34,8 +34,8 @@ public class Problem2 {
 			number = number / 2;
 			i++;
 		} while (number != 0);
-		LocalDateTime time4 = LocalDateTime.now();
-		System.out.println("Time taken : " + (Duration.between(time4, time3).getSeconds() * 1000));
+		//LocalDateTime time4 = LocalDateTime.now();
+		//System.out.println("Time taken : " + (Duration.between(time4, time3).getSeconds() * 1000));
 		return binaryNumber;
 
 	}
