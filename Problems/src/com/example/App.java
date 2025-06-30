@@ -1,6 +1,7 @@
 package com.example;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
 
@@ -48,8 +49,10 @@ public class App {
         Problem9 problem9=new Problem9();
         List<Integer> product=problem9.productOfArray(arr, arr.length);
         List<Integer> product2=problem9.productOfArrayWithOptimalApproach(arr, arr.length);
+        int[] product3=problem9.productOfArrayWithOptimalApproach2(arr, arr.length);
         System.out.println("Result : "+product);
         System.out.println("Result : "+product2);
+        Arrays.stream(product3).forEach(item->System.out.print(item+" "));
     }
     
 }

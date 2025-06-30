@@ -26,7 +26,7 @@ public class Problem9 {
 		 return result;
 	 }
 	 
-	 //Optimal Approach
+	 //Optimal Approach to reduce time complexity
 	 public List<Integer> productOfArrayWithOptimalApproach(int[] arr,int n){
 		 List<Integer> result=new ArrayList<>();
 		 int[] prifix=new int[n];
@@ -46,6 +46,22 @@ public class Problem9 {
 		 System.out.println("\n");
 		 Arrays.stream(suffix).forEach(i -> System.out.print(i + " "));
 		 System.out.println("\n");
+		 return result;
+	 }
+	 
+	 //Optimal Approach to reduce time and space complexity both
+	 public int[] productOfArrayWithOptimalApproach2(int[] arr,int n){
+		 int[] result=new int[n];
+		 result[0]=1;
+		 for(int i=1;i<n;i++) {
+			 int ans=arr[i-1]*result[i-1];
+			 result[i]=ans;
+		 }
+		 int ans2=1;
+		 for(int i=n-2;i>=0;i--) {
+			 ans2*=arr[i+1];
+			result[i]=ans2*result[i];
+		 }
 		 return result;
 	 }
 }
