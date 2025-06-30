@@ -1,6 +1,7 @@
 package com.example;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Vector;
 
 public class App {
@@ -39,10 +40,16 @@ public class App {
        //int ans= new Problem7().power(5, 4);
        
        //System.out.println(ans);
-        int[] arr= {1,8,6,2,5,4,8,3,7};
-        int maxWater= new Problem8().maxWaterInContainerOptimal(arr, arr.length);
-        System.out.println("\n Max Water= "+maxWater);
+//        int[] arr= {1,8,6,2,5,4,8,3,7};
+//        int maxWater= new Problem8().maxWaterInContainerOptimal(arr, arr.length);
+//        System.out.println("\n Max Water= "+maxWater);
         
+        int[]arr= {1,2,3,4};
+        Problem9 problem9=new Problem9();
+        List<Integer> product=problem9.productOfArray(arr, arr.length);
+        List<Integer> product2=problem9.productOfArrayWithOptimalApproach(arr, arr.length);
+        System.out.println("Result : "+product);
+        System.out.println("Result : "+product2);
     }
     
 }
