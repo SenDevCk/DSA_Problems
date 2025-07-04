@@ -18,9 +18,9 @@ public class Problem7 {
 		}
 		while (binaryForm > 0) {
 			if (binaryForm % 2 == 1) {
-				result *= x;
+				result*= x;
 			}
-			x *= x;
+			x*= x;
 			binaryForm /= 2;
 		}
 		return result;

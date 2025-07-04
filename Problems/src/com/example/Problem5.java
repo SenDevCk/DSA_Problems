@@ -36,7 +36,6 @@ public class Problem5 {
 				return positions;
 			}
 		}while(start<end);
-		
 		return positions;
 	}
 }
