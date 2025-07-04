@@ -51,8 +51,7 @@ public class Problem6 {
 		return vector;
 	}
 
-	public Vector<Integer> enhanceApproch(int[] arr, int n) {
-		Vector<Integer> vector = new Vector<>();
+	public int enhanceApproch(int[] arr, int n) {
 		Arrays.sort(arr);
 		int frequency = 1;
 		int data = arr[0];
@@ -64,11 +63,25 @@ public class Problem6 {
 				data = arr[i];
 			}
 		}
-		if (frequency > 1) {
-			vector.add(data);
-			vector.add(frequency);
+		
+		return data;
+	}
+	
+	public int moorAlgoritham(int[] arr,int n) {
+		int ans=0;
+		int frequency=0;
+		for(int i=0;i<n;i++) {
+			if(frequency==0) {
+				ans=arr[i];
+			}
+			
+			if(arr[i]==arr[i-1]) {
+				frequency++;
+			}else {
+				frequency--;
+			}
 		}
-		return vector;
+		return ans;
 	}
 
 }
