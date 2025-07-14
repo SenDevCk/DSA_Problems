@@ -58,7 +58,7 @@ public class App {
     	int[] arr= {5,7,6,9,37,25,15,16};
     	Arrays.sort(arr);
     	Problem10 problem10=new Problem10();
-    	int result=problem10.binarySearchOptimization(arr, 9,arr.length);
+    	int result=problem10.binarySearchOptimizationRecursion(arr, 9,0,arr.length-1);
     	System.err.println("\n Position in the shorted array : -> "+result+" **");
     }
     
