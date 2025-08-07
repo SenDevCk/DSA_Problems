@@ -2,10 +2,35 @@ package com.example;
 
 //search rotated array
 public class Problem11 {
-   
-	public int searchInRotatedArray(int[] arr,int targer) {
-		int result=0;
-		
+
+	public int searchInRotatedArray(int[] arr, int target) {
+		int result = -1;
+		int length = arr.length;
+		int start = 0;
+		int end = length - 1;
+		while (end >= start) {
+			int mid = start + (end - start) / 2;
+			if (target == arr[mid]) {
+				result = mid;
+			}
+			if (arr[start] < arr[mid]) {
+				// left sorted
+				if (arr[start] <= target && target <= arr[mid]) {
+					end = mid - 1;
+				} else {
+					start = mid + 1;
+				}
+
+			} else {
+				// right sorted
+				if (arr[mid] <= target && target <= arr[end]) {
+					start = mid + 1;
+				} else {
+					end = mid - 1;
+				}
+			}
+		}
+
 		return result;
 	}
 }

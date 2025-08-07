@@ -55,10 +55,12 @@ public class App {
 //        Arrays.stream(product3).forEach(item->System.out.print(item+" "));
         
     //binary search
-    	int[] arr= {5,7,6,9,37,25,15,16};
-    	Arrays.sort(arr);
-    	Problem10 problem10=new Problem10();
-    	int result=problem10.binarySearchOptimizationRecursion(arr, 9,0,arr.length-1);
+    	int[] arr= {25,37,5,6,7,9,15,16};
+    	//Arrays.sort(arr);
+//    	Problem10 problem10=new Problem10();
+//    	int result=problem10.binarySearchOptimizationRecursion(arr, 9,0,arr.length-1);
+    	Problem11 problem11=new Problem11();
+    	int result=problem11.searchInRotatedArray(arr,16);
     	System.err.println("\n Position in the shorted array : -> "+result+" **");
     }
     
