@@ -7,7 +7,6 @@ package com.example;
 public class Problem12 {
     
 	public int peakElement(int[] arr,int length) {
-		int result=-1;
 		int start=0;
 		int end=length-1;
 		   while(end>=start) {
@@ -21,6 +20,6 @@ public class Problem12 {
 				   end=mid-1;
 			   }
 		   }
-		return result;
+		return -1;
 	}
 }

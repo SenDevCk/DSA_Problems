@@ -60,11 +60,14 @@ public class App {
 //    	Problem10 problem10=new Problem10();
 //    	int result=problem10.binarySearchOptimizationRecursion(arr, 9,0,arr.length-1);
     	//Problem11 problem11=new Problem11();
-    	//int result=problem11.searchInRotatedArray(arr,16);
+    	//int result=problem11.searchInRotatedArray(new int[] {3,1},1);
     	
     	//peak element in a mountain arr
-    	int[] arr= {10,11,15,17,16,13,12};
-    	int result=new Problem12().peakElement(arr, arr.length);
+//    	int[] arr= {10,11,15,17,16,13,12};
+//    	int result=new Problem12().peakElement(arr, arr.length);
+    	
+    	int[] arr= {2,2,3,3,5,6,6};
+    	int result=new Problem13().singleElement(arr);
     	System.err.println("\n Position in the shorted array : -> "+result+" **");
     }
     

@@ -4,16 +4,14 @@ package com.example;
 public class Problem11 {
 
 	public int searchInRotatedArray(int[] arr, int target) {
-		int result = -1;
-		int length = arr.length;
 		int start = 0;
-		int end = length - 1;
+		int end = arr.length - 1;
 		while (end >= start) {
 			int mid = start + (end - start) / 2;
 			if (target == arr[mid]) {
-				result = mid;
+				return mid;
 			}
-			if (arr[start] < arr[mid]) {
+			if (arr[start] <= arr[mid]) {
 				// left sorted
 				if (arr[start] <= target && target <= arr[mid]) {
 					end = mid - 1;
@@ -31,6 +29,6 @@ public class Problem11 {
 			}
 		}
 
-		return result;
+		return -1;
 	}
 }
