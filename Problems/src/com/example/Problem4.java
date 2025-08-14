@@ -1,5 +1,8 @@
 package com.example;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Problem4 {
   //sub array [1,2,3,4,5,6]
 	
@@ -42,4 +45,9 @@ public class Problem4 {
 		}
 		return final_sum;
 	}
+	
+	
+	 
+	 
+	 
 }

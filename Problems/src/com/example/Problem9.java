@@ -4,7 +4,7 @@ package com.example;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 public class Problem9 {
      //Product of an array except self 
@@ -52,11 +52,13 @@ public class Problem9 {
 	 //Optimal Approach to reduce time and space complexity both
 	 public int[] productOfArrayWithOptimalApproach2(int[] arr,int n){
 		 int[] result=new int[n];
+		 //suffixes
 		 result[0]=1;
 		 for(int i=1;i<n;i++) {
 			 int ans=arr[i-1]*result[i-1];
 			 result[i]=ans;
 		 }
+		 //prefixes
 		 int ans2=1;
 		 for(int i=n-2;i>=0;i--) {
 			 ans2*=arr[i+1];

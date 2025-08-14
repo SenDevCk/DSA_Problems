@@ -9,14 +9,14 @@ public class App {
     public static void main(String[] args) {
         //System.err.println("Hello from module Problems!");
         //new Problem1().swap(5, 6);
-        //lProblem2 problem2=new Problem2();
-//        long value=problem2.convertToBinary(45);
+        //Problem2 problem2=new Problem2();
+//        long value=problem2.convertToBinary(25);
 //        System.out.println("Converted binary number = "+value);
 //        
 //        long value2=problem2.convertToBinary2(45);
 //        System.out.println("Converted binary number = "+value2);
-       // problem2.desimalConverter();
-       // Problem4 prob4= new Problem4();
+       //problem2.desimalConverter();
+       Problem4 prob4= new Problem4();
         //int[] arr= {1,2,3,4,5,6};
         //int[] arr2= {9,2,7,4,-5,6};
        // prob4.subArray(arr2);
@@ -45,15 +45,15 @@ public class App {
 //        int maxWater= new Problem8().maxWaterInContainerOptimal(arr, arr.length);
 //        System.out.println("\n Max Water= "+maxWater);
         
-//        int[]arr= {1,2,3,4};
-//        Problem9 problem9=new Problem9();
+       // int[]arr= {1,2,3,4};
+       // Problem9 problem9=new Problem9();
 //        List<Integer> product=problem9.productOfArray(arr, arr.length);
 //        List<Integer> product2=problem9.productOfArrayWithOptimalApproach(arr, arr.length);
-//        int[] product3=problem9.productOfArrayWithOptimalApproach2(arr, arr.length);
+        //int[] product3=problem9.productOfArrayWithOptimalApproach2(arr, arr.length);
 //        System.out.println("Result : "+product);
 //        System.out.println("Result : "+product2);
-//        Arrays.stream(product3).forEach(item->System.out.print(item+" "));
-        
+        //Arrays.stream(product3).forEach(item->System.out.print(item+" "));
+      
     //binary search
     	//int[] arr= {25,37,5,6,7,9,15,16};
     	//Arrays.sort(arr);
@@ -66,9 +66,14 @@ public class App {
 //    	int[] arr= {10,11,15,17,16,13,12};
 //    	int result=new Problem12().peakElement(arr, arr.length);
     	
-    	int[] arr= {2,2,3,3,5,6,6};
-    	int result=new Problem13().singleElement(arr);
-    	System.err.println("\n Position in the shorted array : -> "+result+" **");
+//    	int[] arr= {2,2,3,3,5,6,6};
+//    	int result=new Problem13().singleElement(arr);
+    	//System.err.println("\n Position in the shorted array : -> "+value+" **");
+       
+       Problem14 prob14=new Problem14();
+       //long length=prob14.lengthOfLongestPalindromSubstring("babad");//or
+       long length=prob14.longestPalindromeLength("babad");
+       System.out.println("lengthOfLongestSubstring: "+length);
     }
     
 }

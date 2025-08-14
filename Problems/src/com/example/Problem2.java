@@ -13,7 +13,9 @@ public class Problem2 {
 		int i = 0;
 		while (number != 0) {
 			remainder = number % 2;
+			//System.out.println("remainder:-"+remainder);
 			binaryNumber += remainder * Math.pow(10, i);
+			//System.out.println("binaryNumber:-"+binaryNumber);
 			number /= 2;
 			i++;
 		}
@@ -59,7 +61,9 @@ public class Problem2 {
 		int i=0;
 		do {
 			remainder=binaryNumber % 10;
+			System.out.println("remainder:-"+remainder);
 			desimalNumber+=remainder*Math.pow(2, i);
+			System.out.println("desimalNumber:-"+desimalNumber);
 			binaryNumber/=10;
 			i++;
 		}while(binaryNumber!=0);
