@@ -1,3 +1,4 @@
+
 package com.example;
 
 import java.util.HashMap;
@@ -6,7 +7,7 @@ import java.util.Map;
 //longest palindrome in a string
 public class Problem14 {
 
-	 public int lengthOfLongestPalindromSubstring(String s) {
+	 public int lengthOfLongestSubstring(String s) {
 		 int n = s.length();
 		    int result = 0;
 		    int left = 0;
@@ -21,7 +22,8 @@ public class Problem14 {
 		    }
 		    return result;
 	    }
-	 
+	
+	 //Kadane's Algorithm
 	 public int longestPalindromeLength(String s) {
 		    if (s == null || s.length() < 1) return 0;
 		    int maxLen = 1;
