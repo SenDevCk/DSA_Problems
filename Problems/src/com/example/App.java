@@ -24,6 +24,7 @@ public class App {
 //        System.out.println("Final Subarray Sum= "+sum);
         //long sum=prob4.kedanesAlgoSubarraySum(arr2, arr2.length);
         //System.out.println("Final Subarray Sum= "+sum);
+    	
         //Problem5 problem5=new Problem5();
 //        int[] arr3= {9,2,7,4,-5,6};
 //        Vector<Integer> result= problem5.targetSumBrutForceApproch(arr3, 1);
@@ -34,7 +35,8 @@ public class App {
 //        System.out.println("Required Result");
 //        System.out.print(result.toString());
         //int[] arr= {1,2,1,2,4,2,2,3,2,2,2};
-       // Problem6 problem6=new Problem6();
+       
+    	// Problem6 problem6=new Problem6();
        // Vector<Integer> result = problem6.brutForceApproch(arr,arr.length);
         //System.out.println("Result Mejority Element= "+result.toString());
         
@@ -62,18 +64,21 @@ public class App {
     	//Problem11 problem11=new Problem11();
     	//int result=problem11.searchInRotatedArray(new int[] {3,1},1);
     	
-    	//peak element in a mountain arr
+   //peak element in a mountain arr
 //    	int[] arr= {10,11,15,17,16,13,12};
 //    	int result=new Problem12().peakElement(arr, arr.length);
     	
 //    	int[] arr= {2,2,3,3,5,6,6};
 //    	int result=new Problem13().singleElement(arr);
     	//System.err.println("\n Position in the shorted array : -> "+value+" **");
-       
+    	
+  //longest pelindrom in string     
       // Problem14 prob14=new Problem14();
        //long length=prob14.lengthOfLongestPalindromSubstring("babad");//or
       // long length=prob14.longestPalindromeLength("babad");
        //System.out.println("lengthOfLongestSubstring: "+length);
+  
+    //Book Allocation  	
     	Problem15 problem15=new Problem15();
     	int result=problem15.equalBookAllocationAmongChildrens(new int[] {2,1,3,4}, 2);
     	System.out.println(" Aloocated book Equally to 2 is : "+result);
