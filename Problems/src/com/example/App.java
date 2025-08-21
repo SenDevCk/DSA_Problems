@@ -16,7 +16,7 @@ public class App {
 //        long value2=problem2.convertToBinary2(45);
 //        System.out.println("Converted binary number = "+value2);
        //problem2.desimalConverter();
-       Problem4 prob4= new Problem4();
+      // Problem4 prob4= new Problem4();
         //int[] arr= {1,2,3,4,5,6};
         //int[] arr2= {9,2,7,4,-5,6};
        // prob4.subArray(arr2);
@@ -70,10 +70,13 @@ public class App {
 //    	int result=new Problem13().singleElement(arr);
     	//System.err.println("\n Position in the shorted array : -> "+value+" **");
        
-       Problem14 prob14=new Problem14();
+      // Problem14 prob14=new Problem14();
        //long length=prob14.lengthOfLongestPalindromSubstring("babad");//or
-       long length=prob14.longestPalindromeLength("babad");
-       System.out.println("lengthOfLongestSubstring: "+length);
+      // long length=prob14.longestPalindromeLength("babad");
+       //System.out.println("lengthOfLongestSubstring: "+length);
+    	Problem15 problem15=new Problem15();
+    	int result=problem15.equalBookAllocationAmongChildrens(new int[] {2,1,3,4}, 2);
+    	System.out.println(" Aloocated book Equally to 2 is : "+result);
     }
     
 }
