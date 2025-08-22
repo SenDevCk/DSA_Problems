@@ -2,7 +2,9 @@ package com.example.strings;
 
 import java.util.HashMap;
 import java.util.Map;
-
+/*
+ * First Unique character in a String
+ */
 public class Problem1 {
 	 public int firstUniqChar(String s) {
 		 if(s.length()==0) return -1;
