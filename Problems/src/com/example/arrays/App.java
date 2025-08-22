@@ -75,7 +75,7 @@ public class App {
     	//System.err.println("\n Position in the shorted array : -> "+value+" **");
     	
   //longest pelindrom in string     
-      // Problem14 prob14=new Problem14();
+      // Problem3 prob14=new Problem3();
        //long length=prob14.lengthOfLongestPalindromSubstring("babad");//or
       // long length=prob14.longestPalindromeLength("babad");
        //System.out.println("lengthOfLongestSubstring: "+length);

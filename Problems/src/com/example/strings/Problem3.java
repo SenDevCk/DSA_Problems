@@ -1,11 +1,11 @@
 
-package com.example.arrays;
+package com.example.strings;
 
 import java.util.HashMap;
 import java.util.Map;
 
 //longest palindrome in a string
-public class Problem14 {
+public class Problem3 {
 
 	 public int lengthOfLongestSubstring(String s) {
 		 int n = s.length();
